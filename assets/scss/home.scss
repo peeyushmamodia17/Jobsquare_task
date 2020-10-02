@@ -1,0 +1,40 @@
+.home{
+    text-align: center;
+    
+}
+.profile{
+    text-align: center;
+    .img{
+        padding-top: 10px;
+        width:200px;
+        height: 200px;
+    }
+}
+#head2{
+    text-align: center;
+    width: 100%;
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        background-color: lightcoral;
+    }
+}
+
+.detail2{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin:0 auto;
+    padding-top: 20px;
+}
+.detail1{
+    display: flex;
+    flex-direction: row;
+}
+.detail1 p{
+    padding: 5px 10px;
+}
+.detail1 a{
+    padding: 20px 10px;
+}

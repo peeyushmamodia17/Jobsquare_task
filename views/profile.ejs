@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="profile">
+    <%if(locals.user.profileurl){%>
+        <div>
+            <img class="img" src="<%=locals.user.profileurl%>">
+        </div>
+    <%}%>
+    
+    <h1><%=locals.user.name%></h1>
+    <p><%=locals.user.email%></p>
+
+    <%if(user){%>
+        <p><%=user.city%></p>
+        <p><%=user.role%></p>
+    <%}%>
+    <%if(locals.user.profileurl){%>
+    <a href="/users/updatepage/<%=locals.user.id%>">Update Profile</a>
+    <%}%>
+</div>

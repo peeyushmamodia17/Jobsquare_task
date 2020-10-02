@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="detalil2">
+    <%for(let i of users){%>
+        <div class="detail1">
+            <p><%=i.name%></p>
+            <p><%=i.email%></p>
+            <p><%=i.city%></p>
+            <p><%=i.role%></p>
+            <a href="/users/delete/<%=i.id%>">Delete</a>
+            <a href="/users/adminUpdate/<%=i.id%>">Update</a>
+        </div>
+    <%}%>
+</div>

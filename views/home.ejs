@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="home">
+    <h1>Welcome to the home page</h1>
+    <p>Here you see the demo of Jobsquare company task</p>
+</div>
+<div id="head2">
+    <% if(locals.user){ %>
+        <p><b>Welcome User <%=user.name%></b></p>
+    <%}%>
+</div>
+<div id="head2">
+    <% if(locals.admin){ %>
+        <p><b>Welcome Admin <%=locals.admin%></b></p>
+    <%}%>
+</div>
+

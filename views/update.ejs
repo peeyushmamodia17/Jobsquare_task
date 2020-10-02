@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="/css/user.css">
+<div class="updateForm">
+    <form class="form" action="/users/update/<%=id%>" method="POST">
+        <input class="input" type="text" name="city" placeholder="Enter city" required>
+        <label for="role">Role</label>
+            <select name="role" id="role">
+                <option value="Candidate">Candidate</option>
+                <option value="Recruiter">Recruiter</option>
+            </select>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+</div>
